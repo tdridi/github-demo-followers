@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-weight: 400;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-header {
+  background-color: #222;
+  color: #fff;
+  overflow: hidden;
+  padding: 0.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-header h1 {
+  line-height: 1;
+  margin: 0;
+  font-weight: 400;
+}
+
+.main-header a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-content {
+  padding: 0.5rem;
+}
+
+
+.main-page {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.user-card {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2em;
+  border:1px solid Black;
+  padding: 2px 16px;
+  width:50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.user-card .title{
+  margin: 1em;
+}
+.user-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em;
+
+}
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-around;
+}
+
+.user-link {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  text-decoration: none;
+  justify-content: center;
+  margin: 1em 1em;
+}
+
+.user-link__title {
+  font-size: 15px;
+}
+
+.user-link__avatar {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 1em;
+  float: left;
+}
+
+.loading-users{
+  color: #000;
 }
